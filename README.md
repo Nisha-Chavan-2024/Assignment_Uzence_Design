@@ -1,26 +1,28 @@
-A responsive React + TypeScript + Vite app styled deployed on Vercel.
+# Uzence Assignment  
 
-✅ Live Demo
+A responsive **React + TypeScript + Vite** app styled with **Material UI** and deployed on **Vercel**.
 
-Click Here
+---
 
-⚡ Tech Stack
+## ✅ Live Demo  
+[Click Here](https://your-vercel-url.vercel.app)
 
-React + TypeScript
+---
 
-Vite
+## ⚡ Tech Stack  
+- **React + TypeScript**  
+- **Vite**  
+- **Material UI**  
+- **Vercel Deployment**  
 
-Material UI
+---
 
-Vercel Deployment
+## 📦 Setup Instructions  
 
-📦 Setup Instructions
-1️⃣ Clone the Repo
-git clone [https://github.com/your-username/uzence-assignment.git](https://github.com/Nisha-Chavan-2024/Assignment_Uzence_Design.git)
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/Nisha-Chavan-2024/Assignment_Uzence_Design.git
 cd uzence-assignment
 
-2️⃣ Install Dependencies
+### Install Dependencies
 npm install
-
-3️⃣ Start Development Server
-npm run dev

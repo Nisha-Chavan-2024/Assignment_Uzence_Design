@@ -23,7 +23,7 @@ A responsive **React + TypeScript + Vite** app styled with **Material UI** and d
 git clone https://github.com/Nisha-Chavan-2024/Assignment_Uzence_Design.git
 cd uzence-assignment
 
-2 **Install Dependencies**
+2 Install Dependencies
 npm install
 
 3 Start Development Server

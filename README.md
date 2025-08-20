@@ -1,6 +1,6 @@
 # Uzence Assignment  
 
-A responsive **React + TypeScript + Vite** app styled with **Material UI** and deployed on **Vercel**.
+A responsive **React + TypeScript + Vite** app styled and deployed on **Vercel**.
 
 ---
 

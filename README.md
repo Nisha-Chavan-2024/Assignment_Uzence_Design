@@ -16,7 +16,7 @@ Vercel Deployment
 
 📦 Setup Instructions
 1️⃣ Clone the Repo
-git clone https://github.com/your-username/uzence-assignment.git
+git clone [https://github.com/your-username/uzence-assignment.git](https://github.com/Nisha-Chavan-2024/Assignment_Uzence_Design.git)
 cd uzence-assignment
 
 2️⃣ Install Dependencies

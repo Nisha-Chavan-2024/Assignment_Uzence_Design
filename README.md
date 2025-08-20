@@ -19,10 +19,13 @@ A responsive **React + TypeScript + Vite** app styled with **Material UI** and d
 
 ## 📦 Setup Instructions  
 
-### 1️⃣ Clone the Repository  
+### 1 Clone the Repository  
 ```bash
 git clone https://github.com/Nisha-Chavan-2024/Assignment_Uzence_Design.git
 cd uzence-assignment
 
-### Install Dependencies
+### 2 Install Dependencies
 npm install
+
+### 3 Start Development Server
+npm run dev

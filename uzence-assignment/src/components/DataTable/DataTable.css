@@ -1,0 +1,91 @@
+.dt-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.dt-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: var(--dt-bg, #ffffff);
+  color: var(--dt-fg, #111827);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  min-width: 600px; /* ✅ Prevent table from shrinking too much */
+}
+
+.dt-thead th.dt-th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.dt-th-select { width: 44px; }
+
+.dt-th-sortable .dt-sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+.dt-th-sortable .dt-sort-btn:hover { text-decoration: underline; }
+.dt-sort-icon { opacity: 0.5; }
+
+.dt-tbody .dt-td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+}
+
+.dt-td-select { text-align: center; }
+
+.dt-tr:hover { background: #f9fafc; }
+.dt-tr--selected { background: #e8f0ff; }
+
+.dt-loading, .dt-empty {
+  padding: 24px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.dt-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c7d2fe;
+  border-top-color: #4f46e5;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  animation: dt-spin 0.7s linear infinite;
+  vertical-align: middle;
+}
+@keyframes dt-spin { to { transform: rotate(360deg); } }
+
+/* ✅ RESPONSIVE BREAKPOINTS */
+@media (max-width: 768px) {
+  .dt-table {
+    font-size: 13px;
+    min-width: 500px; /* ✅ Smaller width for tablets */
+  }
+}
+
+@media (max-width: 520px) {
+  .dt-table {
+    font-size: 12px;
+    min-width: 400px; /* ✅ Mobile width */
+  }
+
+  .dt-thead th.dt-th, .dt-tbody .dt-td {
+    padding: 6px 8px; /* ✅ Reduced padding */
+  }
+}

@@ -1,0 +1,116 @@
+/* Container styling */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app-container.dark {
+  background: #121212;
+  color: white;
+}
+
+/* Theme toggle icon */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Login box */
+.login-box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.input-group input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Helper/Error text */
+.helper-text {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: red;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+button:first-child {
+  background: #007bff;
+  color: white;
+}
+
+button:last-child {
+  background: #f44336;
+  color: white;
+}
+
+/* Dark mode adjustments */
+.app-container.dark input {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.app-container.dark .helper-text {
+  color: #ff6b6b;
+}
+
+.button-group button:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+  opacity: 0.6; /* faint effect */
+}

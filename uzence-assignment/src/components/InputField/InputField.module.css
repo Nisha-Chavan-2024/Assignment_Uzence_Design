@@ -1,0 +1,114 @@
+:root {
+  --if-bg: #ffffff;
+  --if-bg-elev: #f6f7f8;
+  --if-text: #0f172a;
+  --if-text-muted: #475569;
+  --if-border: #cbd5e1;
+  --if-border-hover: #94a3b8;
+  --if-focus: #2563eb;
+  --if-danger: #dc2626;
+}
+
+.dark :root, :root.dark {
+  --if-bg: #0b1020;
+  --if-bg-elev: #121833;
+  --if-text: #e5e7eb;
+  --if-text-muted: #a1a1aa;
+  --if-border: #2b3552;
+  --if-border-hover: #3b4870;
+  --if-focus: #60a5fa;
+  --if-danger: #f87171;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--if-text);
+}
+
+.fullWidth { width: 100%; }
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--if-text-muted);
+}
+
+.wrapper { position: relative; }
+
+.input {
+  width: 100%;
+  outline: none;
+  border-radius: 12px;
+  transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+  color: var(--if-text);
+  background: var(--if-bg);
+  border: 1px solid var(--if-border);
+}
+
+.input:focus {
+  border-color: var(--if-focus);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--if-focus) 25%, transparent);
+}
+
+.outlined { background: var(--if-bg); border-color: var(--if-border); }
+
+.filled { background: var(--if-bg-elev); border-color: transparent; }
+
+.ghost {
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid var(--if-border);
+  border-radius: 0;
+}
+.ghost:focus {
+  border-bottom-color: var(--if-focus);
+  box-shadow: none;
+}
+
+.sm { padding: 8px 12px; font-size: 0.875rem; }
+.md { padding: 12px 14px; font-size: 1rem; }
+.lg { padding: 14px 16px; font-size: 1.125rem; }
+
+.invalid {
+  border-color: var(--if-danger) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--if-danger) 20%, transparent);
+}
+
+.withControls { padding-right: 76px; }
+
+.controls {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.iconButton {
+  border: none;
+  background: transparent;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--if-text-muted);
+}
+.iconButton:hover { background: color-mix(in srgb, var(--if-focus) 8%, transparent); color: var(--if-text); }
+.iconButton:active { transform: translateY(0.5px); }
+
+@keyframes if-spin { to { transform: rotate(360deg); } }
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--if-border-hover);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: if-spin .8s linear infinite;
+}
+
+.messageArea { min-height: 1.1rem; }
+.message { margin: 0; font-size: 0.8rem; color: var(--if-text-muted); }
+.error { color: var(--if-danger); }

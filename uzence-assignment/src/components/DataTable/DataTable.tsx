@@ -101,7 +101,7 @@ export function DataTable<T extends Record<string, any>>({
 
   const handleRowClickSingleSelect = (rowIndex: number) => {
     if (!selectable) return;
-    setSelected(prev => {
+    setSelected(() => {
       const next = new Set<number>([rowIndex]);
       notifySelection(next);
       return next;

@@ -5,7 +5,7 @@ A responsive **React + TypeScript + Vite** app styled and deployed on **Vercel**
 ---
 
 ## ✅ Live Demo  
-[Click Here](https://your-vercel-url.vercel.app)
+[Live Link]([https://your-vercel-url.vercel.app](https://uzence-assignment-gp0w1rbt2-nisha-chavan-2024s-projects.vercel.app))
 
 ---
 
